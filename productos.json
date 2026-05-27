@@ -1,13 +1,5 @@
 [
     {
-        "id": 1,
-        "nombre": "anillo",
-        "precio": "200",
-        "categoria": "Anillos",
-        "descripcion": "anillo de oro baÃ±o",
-        "imagen": "img/1779848900952-Captura de pantalla 2026-03-02 182730.png"
-    },
-    {
         "id": 2,
         "nombre": "Pulsera 1",
         "precio": "200",
