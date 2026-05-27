@@ -12,7 +12,7 @@ Abre `index.html` y busca la sección `const productos = [` — ahí editas el a
     nombre: 'Nombre de la joya',
     precio: '$1,200',
     categoria: 'Anillos',         // Anillos, Collares, Pulseras, Aretes, Dijes, etc.
-    imagen: 'img/tu-foto.jpg',    // Ruta de la imagen
+    imagen: 'img/tu-foto.jpg',    // Ruta de lagit p imagen
     descripcion: 'Breve descripción.'
 }
 ```
