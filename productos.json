@@ -1,13 +1,5 @@
 [
     {
-        "id": 8,
-        "nombre": "Aretes Colgantes",
-        "precio": "$780",
-        "categoria": "Aretes",
-        "imagen": "img/aretes-colgantes.jpg",
-        "descripcion": "Aretes colgantes de plata con perla."
-    },
-    {
         "id": 9,
         "nombre": "Dije San Judas Tadeo",
         "precio": "$620",
