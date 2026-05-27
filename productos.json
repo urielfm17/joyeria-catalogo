@@ -1,13 +1,5 @@
 [
     {
-        "id": 2,
-        "nombre": "Anillo CorazÃ³n Plata",
-        "precio": "$850",
-        "categoria": "Anillos",
-        "imagen": "img/anillo-plata.jpg",
-        "descripcion": "Anillo de plata 925 con dije de corazón."
-    },
-    {
         "id": 3,
         "nombre": "Collar Cadena Oro",
         "precio": "$2,300",
