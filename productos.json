@@ -1,13 +1,5 @@
 [
     {
-        "id": 5,
-        "nombre": "Pulsera Hilo Rojo",
-        "precio": "$350",
-        "categoria": "Pulseras",
-        "imagen": "img/pulsera-roja.jpg",
-        "descripcion": "Pulsera de hilo rojo con dije de oro."
-    },
-    {
         "id": 6,
         "nombre": "Pulsera Tennis",
         "precio": "$1,800",
