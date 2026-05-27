@@ -6,5 +6,13 @@
         "categoria": "Pulsera",
         "descripcion": "",
         "imagen": "img/1779849629739-f18b38c9-7e8c-4135-995b-e0a7202886b4.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Pulcera blankef",
+        "precio": "170",
+        "categoria": "Pulsera",
+        "descripcion": "Llévele",
+        "imagen": "img/1779849895446-0CFC8E69-2E70-46CC-93E4-B54202503570.jpeg"
     }
 ]
