@@ -1,13 +1,5 @@
 [
     {
-        "id": 4,
-        "nombre": "Collar con Dije Luna",
-        "precio": "$1,100",
-        "categoria": "Collares",
-        "imagen": "img/collar-luna.jpg",
-        "descripcion": "Collar plata 925 con dije de luna."
-    },
-    {
         "id": 5,
         "nombre": "Pulsera Hilo Rojo",
         "precio": "$350",
