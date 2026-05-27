@@ -1,13 +1,5 @@
 [
     {
-        "id": 6,
-        "nombre": "Pulsera Tennis",
-        "precio": "$1,800",
-        "categoria": "Pulseras",
-        "imagen": "img/pulsera-tennis.jpg",
-        "descripcion": "Pulsera de zirconias engastadas en plata."
-    },
-    {
         "id": 7,
         "nombre": "Aretes Aro Oro",
         "precio": "$950",
