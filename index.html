@@ -333,7 +333,7 @@
         grid.innerHTML = filtrados.map(p => `
             <div class="card">
                 <img class="card-img" src="${p.imagen}" alt="${p.nombre}" loading="lazy"
-                     onerror="this.src='img/placeholder.svg'">
+                     onerror="this.src='img/no-hay-imagen.webp'">
                 <div class="card-body">
                     <h3>${p.nombre}</h3>
                     <div class="precio">${p.precio}</div>
