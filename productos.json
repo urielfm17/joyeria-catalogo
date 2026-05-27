@@ -1,19 +1,11 @@
 [
     {
-        "id": 1,
-        "nombre": "Anillo Clásico Oro",
-        "precio": "$1,200",
-        "categoria": "Anillos",
-        "imagen": "img/anillo-oro.jpg",
-        "descripcion": "Anillo de oro 14k con acabado pulido."
-    },
-    {
         "id": 2,
-        "nombre": "Anillo Corazón Plata",
+        "nombre": "Anillo CorazÃ³n Plata",
         "precio": "$850",
         "categoria": "Anillos",
         "imagen": "img/anillo-plata.jpg",
-        "descripcion": "Anillo de plata 925 con dije de coraz\u00f3n."
+        "descripcion": "Anillo de plata 925 con dije de corazón."
     },
     {
         "id": 3,
@@ -53,7 +45,7 @@
         "precio": "$950",
         "categoria": "Aretes",
         "imagen": "img/aretes-oro.jpg",
-        "descripcion": "Aretes de aro oro 14k, 2 cm de di\u00e1metro."
+        "descripcion": "Aretes de aro oro 14k, 2 cm de diámetro."
     },
     {
         "id": 8,
@@ -69,7 +61,7 @@
         "precio": "$620",
         "categoria": "Dijes",
         "imagen": "img/dije-sanjudas.jpg",
-        "descripcion": "Dije plata 925 con ba\u00f1o de oro."
+        "descripcion": "Dije plata 925 con baño de oro."
     },
     {
         "id": 10,
