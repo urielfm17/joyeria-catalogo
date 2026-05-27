@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Anillo Clásico Oro",
+        "precio": "$1,200",
+        "categoria": "Anillos",
+        "imagen": "img/anillo-oro.jpg",
+        "descripcion": "Anillo de oro 14k con acabado pulido."
+    },
+    {
+        "id": 2,
+        "nombre": "Anillo Corazón Plata",
+        "precio": "$850",
+        "categoria": "Anillos",
+        "imagen": "img/anillo-plata.jpg",
+        "descripcion": "Anillo de plata 925 con dije de coraz\u00f3n."
+    },
+    {
+        "id": 3,
+        "nombre": "Collar Cadena Oro",
+        "precio": "$2,300",
+        "categoria": "Collares",
+        "imagen": "img/collar-oro.jpg",
+        "descripcion": "Cadena de oro 14k, 45 cm de largo."
+    },
+    {
+        "id": 4,
+        "nombre": "Collar con Dije Luna",
+        "precio": "$1,100",
+        "categoria": "Collares",
+        "imagen": "img/collar-luna.jpg",
+        "descripcion": "Collar plata 925 con dije de luna."
+    },
+    {
+        "id": 5,
+        "nombre": "Pulsera Hilo Rojo",
+        "precio": "$350",
+        "categoria": "Pulseras",
+        "imagen": "img/pulsera-roja.jpg",
+        "descripcion": "Pulsera de hilo rojo con dije de oro."
+    },
+    {
+        "id": 6,
+        "nombre": "Pulsera Tennis",
+        "precio": "$1,800",
+        "categoria": "Pulseras",
+        "imagen": "img/pulsera-tennis.jpg",
+        "descripcion": "Pulsera de zirconias engastadas en plata."
+    },
+    {
+        "id": 7,
+        "nombre": "Aretes Aro Oro",
+        "precio": "$950",
+        "categoria": "Aretes",
+        "imagen": "img/aretes-oro.jpg",
+        "descripcion": "Aretes de aro oro 14k, 2 cm de di\u00e1metro."
+    },
+    {
+        "id": 8,
+        "nombre": "Aretes Colgantes",
+        "precio": "$780",
+        "categoria": "Aretes",
+        "imagen": "img/aretes-colgantes.jpg",
+        "descripcion": "Aretes colgantes de plata con perla."
+    },
+    {
+        "id": 9,
+        "nombre": "Dije San Judas Tadeo",
+        "precio": "$620",
+        "categoria": "Dijes",
+        "imagen": "img/dije-sanjudas.jpg",
+        "descripcion": "Dije plata 925 con ba\u00f1o de oro."
+    },
+    {
+        "id": 10,
+        "nombre": "Dije Inicial",
+        "precio": "$450",
+        "categoria": "Dijes",
+        "imagen": "img/dije-inicial.jpg",
+        "descripcion": "Dije plata 925 con inicial personalizada."
+    }
+]

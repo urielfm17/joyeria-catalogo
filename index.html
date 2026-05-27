@@ -218,106 +218,27 @@
 
 <script>
     // ──── CONFIGURACIÓN ────
-    // Cambia este número por el tuyo (código de país + número)
     const WHATSAPP_NUMBER = '526421406065';
-
-    // Mensaje que se enviará al dar clic en un producto
     const WHATSAPP_MESSAGE = 'Hola, me interesa esta joya:';
-
-    // ──── PRODUCTOS ────
-    // Edita este array con tus joyas.
-    // Categorías sugeridas: Anillos, Collares, Pulseras, Aretes, Dijes, Relojes, etc.
-    const productos = [
-        {
-            id: 1,
-            nombre: 'Anillo Clásico Oro',
-            precio: '$1,200',
-            categoria: 'Anillos',
-            imagen: 'img/anillo-oro.jpg',
-            descripcion: 'Anillo de oro 14k con acabado pulido.'
-        },
-        {
-            id: 2,
-            nombre: 'Anillo Corazón Plata',
-            precio: '$850',
-            categoria: 'Anillos',
-            imagen: 'img/anillo-plata.jpg',
-            descripcion: 'Anillo de plata 925 con dije de corazón.'
-        },
-        {
-            id: 3,
-            nombre: 'Collar Cadena Oro',
-            precio: '$2,300',
-            categoria: 'Collares',
-            imagen: 'img/collar-oro.jpg',
-            descripcion: 'Cadena de oro 14k, 45 cm de largo.'
-        },
-        {
-            id: 4,
-            nombre: 'Collar con Dije Luna',
-            precio: '$1,100',
-            categoria: 'Collares',
-            imagen: 'img/collar-luna.jpg',
-            descripcion: 'Collar plata 925 con dije de luna.'
-        },
-        {
-            id: 5,
-            nombre: 'Pulsera Hilo Rojo',
-            precio: '$350',
-            categoria: 'Pulseras',
-            imagen: 'img/pulsera-roja.jpg',
-            descripcion: 'Pulsera de hilo rojo con dije de oro.'
-        },
-        {
-            id: 6,
-            nombre: 'Pulsera Tennis',
-            precio: '$1,800',
-            categoria: 'Pulseras',
-            imagen: 'img/pulsera-tennis.jpg',
-            descripcion: 'Pulsera de zirconias engastadas en plata.'
-        },
-        {
-            id: 7,
-            nombre: 'Aretes Aro Oro',
-            precio: '$950',
-            categoria: 'Aretes',
-            imagen: 'img/aretes-oro.jpg',
-            descripcion: 'Aretes de aro oro 14k, 2 cm de diámetro.'
-        },
-        {
-            id: 8,
-            nombre: 'Aretes Colgantes',
-            precio: '$780',
-            categoria: 'Aretes',
-            imagen: 'img/aretes-colgantes.jpg',
-            descripcion: 'Aretes colgantes de plata con perla.'
-        },
-        {
-            id: 9,
-            nombre: 'Dije San Judas Tadeo',
-            precio: '$620',
-            categoria: 'Dijes',
-            imagen: 'img/dije-sanjudas.jpg',
-            descripcion: 'Dije plata 925 con baño de oro.'
-        },
-        {
-            id: 10,
-            nombre: 'Dije Inicial',
-            precio: '$450',
-            categoria: 'Dijes',
-            imagen: 'img/dije-inicial.jpg',
-            descripcion: 'Dije plata 925 con inicial personalizada.'
-        }
-    ];
-
-    // ──── NO EDITES MÁS ALLÁ DE ESTA LÍNEA ────
 
     const grid = document.getElementById('grid');
     const categoriesContainer = document.getElementById('categories');
+    let productos = [];
+
+    async function cargar() {
+        try {
+            const r = await fetch('productos.json?_=' + Date.now());
+            productos = await r.json();
+        } catch (e) {
+            grid.innerHTML = '<div class="empty">Error al cargar el catálogo.</div>';
+            return;
+        }
+        initCategories();
+        render();
+    }
 
     function getCategories() {
-        const cats = [...new Set(productos.map(p => p.categoria))];
-        return ['Todas', ...cats];
+        return ['Todas', ...new Set(productos.map(p => p.categoria))];
     }
 
     function render(categoriaFiltro = 'Todas') {
@@ -326,14 +247,14 @@
             : productos.filter(p => p.categoria === categoriaFiltro);
 
         if (filtrados.length === 0) {
-            grid.innerHTML = `<div class="empty">No hay productos en esta categoría.</div>`;
+            grid.innerHTML = '<div class="empty">No hay productos en esta categor\u00eda.</div>';
             return;
         }
 
         grid.innerHTML = filtrados.map(p => `
             <div class="card">
                 <img class="card-img" src="${p.imagen}" alt="${p.nombre}" loading="lazy"
-                     onerror="this.src='img/carga.webp'">
+                     onerror="this.src='img/placeholder.svg'">
                 <div class="card-body">
                     <h3>${p.nombre}</h3>
                     <div class="precio">${p.precio}</div>
@@ -365,8 +286,7 @@
         });
     }
 
-    initCategories();
-    render();
+    cargar();
 </script>
 </body>
 </html>

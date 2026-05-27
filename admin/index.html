@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Joyas & Arte</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',sans-serif; background:#faf6f2; color:#2c1810; }
+header { background:linear-gradient(135deg,#2c1810,#4a2c1a); color:#f5e6d0; text-align:center; padding:30px 20px; }
+header h1 { font-size:1.5rem; font-weight:300; }
+h2 { font-size:1.1rem; margin-bottom:12px; color:#4a2c1a; }
+.contenedor { max-width:800px; margin:0 auto; padding:20px 16px; }
+
+/* Token */
+.token-box { background:#fff; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(44,24,16,0.08); margin-bottom:20px; }
+.token-box label { font-size:.85rem; font-weight:600; display:block; margin-bottom:6px; }
+.token-row { display:flex; gap:8px; }
+.token-row input { flex:1; padding:10px; border:1px solid #c4a882; border-radius:8px; font-size:.9rem; font-family:inherit; outline:none; }
+.token-row input:focus { border-color:#8b5e3c; }
+.btn { padding:10px 20px; border:none; border-radius:8px; font-size:.85rem; font-weight:600; cursor:pointer; font-family:inherit; transition:background .2s; }
+.btn-primary { background:#4a2c1a; color:#fff; }
+.btn-primary:hover { background:#2c1810; }
+.btn-primary:disabled { opacity:.5; cursor:not-allowed; }
+.btn-success { background:#25d366; color:#fff; }
+.btn-success:hover { background:#1da851; }
+.btn-danger { background:#e74c3c; color:#fff; }
+.btn-danger:hover { background:#c0392b; }
+.btn-warning { background:#e67e22; color:#fff; }
+.btn-warning:hover { background:#d35400; }
+.btn-outline { background:transparent; border:1px solid #c4a882; color:#4a2c1a; }
+.btn-outline:hover { background:#f0e6d8; }
+.btn-sm { padding:6px 12px; font-size:.8rem; }
+.estado { margin-top:8px; font-size:.85rem; padding:8px; border-radius:6px; display:none; }
+.estado.error { display:block; background:#fde8e8; color:#c0392b; }
+.estado.ok { display:block; background:#e8fde8; color:#1da851; }
+
+/* Formulario */
+.form-box { background:#fff; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(44,24,16,0.08); margin-bottom:20px; display:none; }
+.form-box.visible { display:block; }
+.form-grid { display:grid; gap:12px; }
+.form-grid label { font-size:.85rem; font-weight:600; color:#4a2c1a; }
+.form-grid input, .form-grid select, .form-grid textarea { padding:10px; border:1px solid #c4a882; border-radius:8px; font-size:.9rem; font-family:inherit; outline:none; }
+.form-grid input:focus, .form-grid select:focus, .form-grid textarea:focus { border-color:#8b5e3c; }
+.form-grid textarea { resize:vertical; min-height:70px; }
+.form-grid .btn-row { display:flex; gap:8px; margin-top:4px; }
+.imagen-preview { max-width:120px; max-height:120px; border-radius:6px; border:1px solid #c4a882; display:none; }
+.imagen-preview.visible { display:block; }
+
+/* Lista productos */
+.lista { background:#fff; border-radius:10px; box-shadow:0 2px 8px rgba(44,24,16,0.08); overflow:hidden; }
+.lista-header { padding:14px 16px; background:#f0e6d8; font-weight:600; font-size:.9rem; display:flex; justify-content:space-between; align-items:center; }
+.item { display:flex; align-items:center; gap:12px; padding:12px 16px; border-bottom:1px solid #f0e6d8; }
+.item:last-child { border-bottom:none; }
+.item-img { width:44px; height:44px; border-radius:6px; object-fit:cover; background:#eee; flex-shrink:0; }
+.item-info { flex:1; min-width:0; }
+.item-info h4 { font-size:.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.item-info span { font-size:.8rem; color:#8b5e3c; font-weight:600; }
+.item-acciones { display:flex; gap:6px; flex-shrink:0; }
+.vacio { padding:30px; text-align:center; color:#7a6a5e; font-size:.9rem; }
+
+/* Modal confirmación */
+.modal-bg { display:none; position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:99; justify-content:center; align-items:center; }
+.modal-bg.visible { display:flex; }
+.modal { background:#fff; border-radius:12px; padding:24px; max-width:360px; width:90%; text-align:center; }
+.modal h3 { margin-bottom:12px; font-size:1rem; }
+.modal p { font-size:.85rem; color:#7a6a5e; margin-bottom:20px; }
+.modal .btn-row { justify-content:center; }
+
+@media (min-width:600px) {
+  header h1 { font-size:2rem; }
+  .form-grid { grid-template-columns:1fr 1fr; }
+  .form-grid .full { grid-column:1 / -1; }
+}
+</style>
+</head>
+<body>
+
+<header><h1>✦ ADMIN — Joyas & Arte</h1></header>
+
+<div class="contenedor">
+
+  <!-- Token -->
+  <div class="token-box">
+    <label>Token de GitHub (Personal Access Token)</label>
+    <div class="token-row">
+      <input type="password" id="tokenInput" placeholder="ghp_... o github_pat_...">
+      <button class="btn btn-primary" id="btnConectar">Conectar</button>
+    </div>
+    <div class="estado" id="tokenEstado"></div>
+    <p style="font-size:.75rem;color:#7a6a5e;margin-top:8px">
+      Crea un token en 
+      <a href="https://github.com/settings/tokens" target="_blank" style="color:#8b5e3c">
+        github.com/settings/tokens
+      </a> 
+      con permiso <strong>repo</strong> (o <strong>Contents: Read and write</strong> si es fine-grained).
+    </p>
+  </div>
+
+  <!-- Botón agregar -->
+  <div style="margin-bottom:16px">
+    <button class="btn btn-success" id="btnAgregar">+ Agregar Producto</button>
+  </div>
+
+  <!-- Formulario -->
+  <div class="form-box" id="formBox">
+    <h2 id="formTitulo">Nuevo Producto</h2>
+    <div class="form-grid">
+      <div>
+        <label>Nombre</label>
+        <input type="text" id="fNombre" placeholder="Ej: Anillo de Oro">
+      </div>
+      <div>
+        <label>Precio</label>
+        <input type="text" id="fPrecio" placeholder="Ej: $1,200">
+      </div>
+      <div>
+        <label>Categoría</label>
+        <input type="text" id="fCategoria" placeholder="Ej: Anillos" list="catsList">
+        <datalist id="catsList"></datalist>
+      </div>
+      <div>
+        <label>Imagen</label>
+        <input type="file" id="fImagen" accept="image/*">
+        <img class="imagen-preview" id="imagenPreview">
+      </div>
+      <div class="full">
+        <label>Descripción</label>
+        <textarea id="fDescripcion" placeholder="Breve descripción"></textarea>
+      </div>
+      <div class="full">
+        <div class="btn-row">
+          <button class="btn btn-primary" id="btnGuardar">Guardar</button>
+          <button class="btn btn-outline" id="btnCancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista -->
+  <div class="lista">
+    <div class="lista-header">
+      <span>Productos</span>
+      <span id="contador">0</span>
+    </div>
+    <div id="listaItems"></div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <h3 id="modalTitulo">¿Eliminar?</h3>
+    <p id="modalMsg">Se eliminará este producto del catálogo.</p>
+    <div class="btn-row" style="display:flex;gap:8px">
+      <button class="btn btn-danger" id="modalConfirmar">Eliminar</button>
+      <button class="btn btn-outline" id="modalCancelar">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ─── CONFIG (cámbialo si tu repo cambia) ───
+  const OWNER = 'urielfm17';
+  const REPO = 'joyeria-catalogo';
+  const BRANCH = 'main';
+  const JSON_PATH = 'productos.json';
+  const IMG_PREFIX = 'img/';
+  const API = 'https://api.github.com';
+
+  // ─── Estado ───
+  let token = '';
+  let productos = [];
+  let shaJson = null;
+  let editandoId = null;
+  let imagenBase64 = null;
+  let imagenNombre = null;
+
+  const $ = id => document.getElementById(id);
+  const tokenInput = $('tokenInput');
+  const btnConectar = $('btnConectar');
+  const tokenEstado = $('tokenEstado');
+  const btnAgregar = $('btnAgregar');
+  const formBox = $('formBox');
+  const formTitulo = $('formTitulo');
+  const fNombre = $('fNombre');
+  const fPrecio = $('fPrecio');
+  const fCategoria = $('fCategoria');
+  const fDescripcion = $('fDescripcion');
+  const fImagen = $('fImagen');
+  const imagenPreview = $('imagenPreview');
+  const btnGuardar = $('btnGuardar');
+  const btnCancelar = $('btnCancelar');
+  const listaItems = $('listaItems');
+  const contador = $('contador');
+  const modalBg = $('modalBg');
+  const modalTitulo = $('modalTitulo');
+  const modalMsg = $('modalMsg');
+  const modalConfirmar = $('modalConfirmar');
+  const modalCancelar = $('modalCancelar');
+
+  // ─── API Helper ───
+  async function gh(method, path, body) {
+    const opts = { method, headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' } };
+    if (body) opts.body = JSON.stringify(body);
+    const r = await fetch(`${API}${path}`, opts);
+    if (!r.ok) {
+      const err = await r.json().catch(() => ({}));
+      throw new Error(err.message || `Error ${r.status}`);
+    }
+    return r.status === 204 ? null : r.json();
+  }
+
+  // ─── Cargar productos ───
+  async function cargarProductos() {
+    try {
+      const data = await gh('GET', `/repos/${OWNER}/${REPO}/contents/${JSON_PATH}`);
+      shaJson = data.sha;
+      const dec = atob(data.content.replace(/\n/g, ''));
+      productos = JSON.parse(dec);
+    } catch (e) {
+      if (e.message.includes('404')) {
+        productos = [];
+        shaJson = null;
+      } else {
+        throw e;
+      }
+    }
+  }
+
+  async function getShaImg(nombre) {
+    try {
+      const data = await gh('GET', `/repos/${OWNER}/${REPO}/contents/${IMG_PREFIX}${nombre}`);
+      return data.sha;
+    } catch { return null; }
+  }
+
+  // ─── Guardar productos.json ───
+  async function guardarJson() {
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(productos, null, 4))));
+    const body = { message: 'Actualizar catálogo', content, branch: BRANCH };
+    if (shaJson) body.sha = shaJson;
+    const data = await gh('PUT', `/repos/${OWNER}/${REPO}/contents/${JSON_PATH}`, body);
+    shaJson = data.content.sha;
+  }
+
+  // ─── Subir imagen ───
+  async function subirImagen(nombre, base64) {
+    const existingSha = await getShaImg(nombre);
+    const body = { message: `Agregar imagen ${nombre}`, content: base64, branch: BRANCH };
+    if (existingSha) body.sha = existingSha;
+    await gh('PUT', `/repos/${OWNER}/${REPO}/contents/${IMG_PREFIX}${nombre}`, body);
+  }
+
+  // ─── Render ───
+  function render() {
+    if (!productos.length) { listaItems.innerHTML = '<div class="vacio">No hay productos. Agrega el primero.</div>'; contador.textContent = '0'; return; }
+    contador.textContent = productos.length;
+    listaItems.innerHTML = productos.map(p => `
+      <div class="item">
+        <img class="item-img" src="${p.imagen}" alt="" onerror="this.src='img/placeholder.svg'">
+        <div class="item-info">
+          <h4>${p.nombre}</h4>
+          <span>${p.precio}</span> &middot; ${p.categoria}
+        </div>
+        <div class="item-acciones">
+          <button class="btn btn-warning btn-sm" onclick="editar(${p.id})">Editar</button>
+          <button class="btn btn-danger btn-sm" onclick="confirmarEliminar(${p.id})">X</button>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ─── Conectar ───
+  btnConectar.onclick = async () => {
+    token = tokenInput.value.trim();
+    if (!token) { mostrarEstado(tokenEstado, 'Ingresa un token', 'error'); return; }
+    btnConectar.disabled = true;
+    btnConectar.textContent = 'Conectando...';
+    try {
+      await gh('GET', '/user');
+      await cargarProductos();
+      render();
+      actualizarDatalist();
+      mostrarEstado(tokenEstado, 'Conectado correctamente', 'ok');
+      localStorage.setItem('gh_token', token);
+    } catch (e) {
+      mostrarEstado(tokenEstado, 'Error: ' + e.message, 'error');
+    }
+    btnConectar.disabled = false;
+    btnConectar.textContent = 'Conectar';
+  };
+
+  const savedToken = localStorage.getItem('gh_token');
+  if (savedToken) { tokenInput.value = savedToken; btnConectar.click(); }
+
+  // ─── Formulario ───
+  btnAgregar.onclick = () => { abrirFormulario(); };
+  btnCancelar.onclick = () => { cerrarFormulario(); };
+
+  function abrirFormulario(p) {
+    editandoId = p ? p.id : null;
+    formTitulo.textContent = p ? 'Editar Producto' : 'Nuevo Producto';
+    if (p) {
+      fNombre.value = p.nombre;
+      fPrecio.value = p.precio;
+      fCategoria.value = p.categoria;
+      fDescripcion.value = p.descripcion;
+      if (p.imagen && !p.imagen.includes('placeholder')) {
+        imagenPreview.src = p.imagen;
+        imagenPreview.classList.add('visible');
+      } else {
+        imagenPreview.classList.remove('visible');
+      }
+    } else {
+      fNombre.value = ''; fPrecio.value = ''; fCategoria.value = ''; fDescripcion.value = '';
+      imagenPreview.classList.remove('visible');
+    }
+    imagenBase64 = null;
+    imagenNombre = null;
+    fImagen.value = '';
+    formBox.classList.add('visible');
+    formBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function cerrarFormulario() {
+    formBox.classList.remove('visible');
+    editandoId = null;
+    imagenBase64 = null;
+    imagenNombre = null;
+  }
+
+  fImagen.onchange = e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const dataUrl = ev.target.result;
+      imagenBase64 = dataUrl.split(',')[1];
+      imagenNombre = Date.now() + '-' + file.name;
+      imagenPreview.src = dataUrl;
+      imagenPreview.classList.add('visible');
+    };
+    reader.readAsDataURL(file);
+  };
+
+  btnGuardar.onclick = async () => {
+    const nombre = fNombre.value.trim();
+    const precio = fPrecio.value.trim();
+    const categoria = fCategoria.value.trim();
+    const descripcion = fDescripcion.value.trim();
+    if (!nombre || !precio || !categoria) { alert('Nombre, precio y categoría son obligatorios.'); return; }
+    btnGuardar.disabled = true;
+    btnGuardar.textContent = 'Guardando...';
+    try {
+      let rutaImg = '';
+      if (imagenBase64 && imagenNombre) {
+        await subirImagen(imagenNombre, imagenBase64);
+        rutaImg = IMG_PREFIX + imagenNombre;
+      }
+
+      if (editandoId) {
+        const idx = productos.findIndex(p => p.id === editandoId);
+        if (idx === -1) { alert('Error: producto no encontrado'); cerrarFormulario(); return; }
+        productos[idx].nombre = nombre;
+        productos[idx].precio = precio;
+        productos[idx].categoria = categoria;
+        productos[idx].descripcion = descripcion;
+        if (rutaImg) productos[idx].imagen = rutaImg;
+      } else {
+        const maxId = productos.reduce((mx, p) => Math.max(mx, p.id), 0);
+        productos.push({ id: maxId + 1, nombre, precio, categoria, descripcion, imagen: rutaImg || 'img/placeholder.svg' });
+      }
+
+      await guardarJson();
+      render();
+      actualizarDatalist();
+      cerrarFormulario();
+      alert('Producto guardado correctamente. Los cambios se verán en la página en 1-2 min.');
+    } catch (e) {
+      alert('Error al guardar: ' + e.message);
+    }
+    btnGuardar.disabled = false;
+    btnGuardar.textContent = 'Guardar';
+  };
+
+  function editar(id) {
+    const p = productos.find(x => x.id === id);
+    if (p) abrirFormulario(p);
+  }
+
+  // ─── Eliminar con modal ───
+  let eliminarId = null;
+  function confirmarEliminar(id) {
+    eliminarId = id;
+    const p = productos.find(x => x.id === id);
+    modalTitulo.textContent = '¿Eliminar producto?';
+    modalMsg.textContent = `Se eliminará "${p ? p.nombre : ''}" del catálogo.`;
+    modalBg.classList.add('visible');
+  }
+
+  modalConfirmar.onclick = async () => {
+    modalBg.classList.remove('visible');
+    if (eliminarId === null) return;
+    try {
+      productos = productos.filter(p => p.id !== eliminarId);
+      await guardarJson();
+      render();
+      actualizarDatalist();
+      alert('Producto eliminado.');
+    } catch (e) {
+      alert('Error al eliminar: ' + e.message);
+    }
+    eliminarId = null;
+  };
+
+  modalCancelar.onclick = () => { modalBg.classList.remove('visible'); eliminarId = null; };
+  modalBg.onclick = e => { if (e.target === modalBg) modalBg.classList.remove('visible'); };
+
+  // ─── Datalist categorías ───
+  function actualizarDatalist() {
+    const cats = [...new Set(productos.map(p => p.categoria))];
+    document.getElementById('catsList').innerHTML = cats.map(c => `<option value="${c}">`).join('');
+  }
+
+  function mostrarEstado(el, msg, tipo) {
+    el.textContent = msg;
+    el.className = 'estado ' + tipo;
+  }
+</script>
+</body>
+</html>
