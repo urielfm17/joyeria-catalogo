@@ -1,13 +1,5 @@
 [
     {
-        "id": 9,
-        "nombre": "Dije San Judas Tadeo",
-        "precio": "$620",
-        "categoria": "Dijes",
-        "imagen": "img/dije-sanjudas.jpg",
-        "descripcion": "Dije plata 925 con baño de oro."
-    },
-    {
         "id": 10,
         "nombre": "Dije Inicial",
         "precio": "$450",
