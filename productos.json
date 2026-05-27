@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "id": 1,
+        "nombre": "anillo",
+        "precio": "200",
+        "categoria": "Anillos",
+        "descripcion": "anillo de oro baño",
+        "imagen": "img/1779848900952-Captura de pantalla 2026-03-02 182730.png"
+    }
+]
