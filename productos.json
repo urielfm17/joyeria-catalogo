@@ -4,7 +4,15 @@
         "nombre": "anillo",
         "precio": "200",
         "categoria": "Anillos",
-        "descripcion": "anillo de oro baño",
+        "descripcion": "anillo de oro baÃ±o",
         "imagen": "img/1779848900952-Captura de pantalla 2026-03-02 182730.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Pulsera 1",
+        "precio": "200",
+        "categoria": "Pulsera",
+        "descripcion": "",
+        "imagen": "img/1779849629739-f18b38c9-7e8c-4135-995b-e0a7202886b4.jpeg"
     }
 ]
