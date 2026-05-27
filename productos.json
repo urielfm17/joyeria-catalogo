@@ -1,13 +1,5 @@
 [
     {
-        "id": 3,
-        "nombre": "Collar Cadena Oro",
-        "precio": "$2,300",
-        "categoria": "Collares",
-        "imagen": "img/collar-oro.jpg",
-        "descripcion": "Cadena de oro 14k, 45 cm de largo."
-    },
-    {
         "id": 4,
         "nombre": "Collar con Dije Luna",
         "precio": "$1,100",
