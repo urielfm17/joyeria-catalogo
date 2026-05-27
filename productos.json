@@ -14,5 +14,13 @@
         "categoria": "Reloj",
         "descripcion": "",
         "imagen": "img/1779921345611-1F972F35-BAFC-4B7C-AAAA-0A6462B836F3.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Italianas",
+        "precio": "140",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1779921411871-B8C0C35E-FEE6-4216-87D7-9EFAA9D63250.jpeg"
     }
 ]
