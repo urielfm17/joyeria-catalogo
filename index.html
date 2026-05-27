@@ -104,6 +104,7 @@
             object-fit: cover;
             background: #eee;
             display: block;
+            cursor: pointer;
         }
 
         .card-body {
@@ -196,6 +197,42 @@
         @media (min-width: 900px) {
             .grid { grid-template-columns: repeat(3, 1fr); }
         }
+
+        /* LIGHTBOX */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 999;
+            background: rgba(0,0,0,.85);
+            justify-content: center;
+            align-items: center;
+            cursor: zoom-out;
+        }
+        .lightbox.visible { display: flex; }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,.5);
+        }
+        .lightbox .cerrar {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0,0,0,.5);
+            color: #fff;
+            font-size: 1.6rem;
+            line-height: 44px;
+            text-align: center;
+            cursor: pointer;
+            z-index: 1000;
+            -webkit-tap-highlight-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -211,8 +248,13 @@
 <!-- PRODUCTOS -->
 <div class="grid" id="grid"></div>
 
+<div class="lightbox" id="lightbox">
+    <button class="cerrar" id="btnCerrarLb">×</button>
+    <img id="lightboxImg">
+</div>
+
 <footer>
-    <p>¿Prefieres pedir por WhatsApp directamente?</p>
+    
     <a href="https://wa.me/526421406065" target="_blank">¦ Envíanos un mensaje ¦</a>
 </footer>
 
@@ -254,7 +296,8 @@
         grid.innerHTML = filtrados.map(p => `
             <div class="card">
                 <img class="card-img" src="${p.imagen}" alt="${p.nombre}" loading="lazy"
-                     onerror="this.src='img/placeholder.svg'">
+                     onerror="this.src='img/placeholder.svg'"
+                     onclick="abrirLightbox(this.src)">
                 <div class="card-body">
                     <h3>${p.nombre}</h3>
                     <div class="precio">${p.precio}</div>
@@ -287,6 +330,15 @@
     }
 
     cargar();
+
+    // Lightbox
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+    function abrirLightbox(src) { lbImg.src = src; lb.classList.add('visible'); }
+    function cerrarLb() { lb.classList.remove('visible'); }
+    lb.onclick = cerrarLb;
+    document.getElementById('btnCerrarLb').onclick = e => { e.stopPropagation(); cerrarLb(); };
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarLb(); });
 </script>
 </body>
 </html>
