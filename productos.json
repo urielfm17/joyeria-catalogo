@@ -1,13 +1,5 @@
 [
     {
-        "id": 7,
-        "nombre": "Aretes Aro Oro",
-        "precio": "$950",
-        "categoria": "Aretes",
-        "imagen": "img/aretes-oro.jpg",
-        "descripcion": "Aretes de aro oro 14k, 2 cm de diámetro."
-    },
-    {
         "id": 8,
         "nombre": "Aretes Colgantes",
         "precio": "$780",
