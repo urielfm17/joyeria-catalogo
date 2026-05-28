@@ -70,5 +70,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780003686198-2008271A-28D2-48CC-A016-04741C5C6E2D.jpeg"
+    },
+    {
+        "id": 10,
+        "nombre": "Clavo",
+        "precio": "$230",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780012749417-C81ABCB4-2E8D-4503-B13C-F622EC872754.jpeg"
     }
 ]
