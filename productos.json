@@ -30,5 +30,13 @@
         "categoria": "Reloj",
         "descripcion": "",
         "imagen": "img/1780003391711-160475f5-201c-49a4-bbc7-4d8c696592c7.jpeg"
+    },
+    {
+        "id": 5,
+        "nombre": "Pulso",
+        "precio": "$160",
+        "categoria": "Pulso",
+        "descripcion": "",
+        "imagen": "img/1780003471219-B926A6E4-0862-4C31-A208-5747B4F32673.jpeg"
     }
 ]
