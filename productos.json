@@ -14,5 +14,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780003297314-4B078D4B-9CB1-4ED2-9B24-397F1DBC52E3.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Reloj",
+        "precio": "$370",
+        "categoria": "Reloj",
+        "descripcion": "",
+        "imagen": "img/1780003354123-e2a2f539-14fd-412a-bb60-6b0f1d96b7bf.jpeg"
     }
 ]
