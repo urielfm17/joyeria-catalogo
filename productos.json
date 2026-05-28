@@ -22,5 +22,13 @@
         "categoria": "Reloj",
         "descripcion": "",
         "imagen": "img/1780003354123-e2a2f539-14fd-412a-bb60-6b0f1d96b7bf.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "Reloj",
+        "precio": "$370",
+        "categoria": "Reloj",
+        "descripcion": "",
+        "imagen": "img/1780003391711-160475f5-201c-49a4-bbc7-4d8c696592c7.jpeg"
     }
 ]
