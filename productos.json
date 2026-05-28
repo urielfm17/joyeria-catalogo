@@ -62,5 +62,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780003645436-23A65429-2252-4425-B0BF-A82B42BFFFC4.jpeg"
+    },
+    {
+        "id": 9,
+        "nombre": "Estilo Pandora",
+        "precio": "$120",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780003686198-2008271A-28D2-48CC-A016-04741C5C6E2D.jpeg"
     }
 ]
