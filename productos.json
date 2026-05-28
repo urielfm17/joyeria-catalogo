@@ -54,5 +54,13 @@
         "categoria": "Charms",
         "descripcion": "",
         "imagen": "img/1780003595604-2912E903-FDB5-48E6-B380-4D07CA3DD6D8.jpeg"
+    },
+    {
+        "id": 8,
+        "nombre": "Estilo Pandora",
+        "precio": "$120",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780003645436-23A65429-2252-4425-B0BF-A82B42BFFFC4.jpeg"
     }
 ]
