@@ -38,5 +38,13 @@
         "categoria": "Pulso",
         "descripcion": "",
         "imagen": "img/1780003471219-B926A6E4-0862-4C31-A208-5747B4F32673.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "Estilo Pandora",
+        "precio": "$120",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780003513295-D9ECA08C-281D-4D9E-9D13-C63893DE30FF.jpeg"
     }
 ]
