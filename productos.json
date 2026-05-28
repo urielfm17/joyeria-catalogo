@@ -46,5 +46,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780003513295-D9ECA08C-281D-4D9E-9D13-C63893DE30FF.jpeg"
+    },
+    {
+        "id": 7,
+        "nombre": "Charms",
+        "precio": "$60 c/u",
+        "categoria": "Charms",
+        "descripcion": "",
+        "imagen": "img/1780003595604-2912E903-FDB5-48E6-B380-4D07CA3DD6D8.jpeg"
     }
 ]
