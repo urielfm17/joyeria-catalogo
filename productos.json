@@ -470,5 +470,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780018035073-44758F88-E84C-4E1E-85FF-7CCABB4FF2A4.jpeg"
+    },
+    {
+        "id": 61,
+        "nombre": "Cadena de la virgencita",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780018103901-9EC8A6A8-84DE-46F3-81E9-CD1B6DE21EBB.jpeg"
     }
 ]
