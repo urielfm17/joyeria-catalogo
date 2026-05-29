@@ -222,5 +222,13 @@
         "categoria": "Brazalete",
         "descripcion": "",
         "imagen": "img/1780015508756-DAED0C84-32E7-488F-B43C-93AEF6070C81.jpeg"
+    },
+    {
+        "id": 30,
+        "nombre": "Esclavita",
+        "precio": "$140",
+        "categoria": "Esclava",
+        "descripcion": "",
+        "imagen": "img/1780015531242-aa8c6c34-7c24-48ef-b255-4a6ba2142b34.jpeg"
     }
 ]
