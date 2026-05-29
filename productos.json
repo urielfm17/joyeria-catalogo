@@ -254,5 +254,13 @@
         "categoria": "Aracadas",
         "descripcion": "",
         "imagen": "img/1780015905560-AB2C837D-3909-46E0-9BA6-C0EE281FEF33.jpeg"
+    },
+    {
+        "id": 34,
+        "nombre": "Aracadas chiquitas",
+        "precio": "$100",
+        "categoria": "Aracadas",
+        "descripcion": "",
+        "imagen": "img/1780015970396-A38D9109-EC39-46CE-B52B-63709AA4E04C.jpeg"
     }
 ]
