@@ -72,13 +72,19 @@
         .categories {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
             justify-content: center;
-            padding: 20px 16px 10px;
+            padding: 14px 16px 10px;
             position: sticky;
             top: 0;
             background: #faf6f2;
             z-index: 10;
+            transition: padding 0.3s, box-shadow 0.3s;
+        }
+
+        .categories.scrolled {
+            padding: 8px 16px;
+            box-shadow: 0 2px 8px rgba(44, 24, 16, 0.1);
         }
 
         .categories button {
@@ -91,6 +97,11 @@
             cursor: pointer;
             transition: all 0.2s;
             font-family: inherit;
+        }
+
+        .categories.scrolled button {
+            padding: 5px 14px;
+            font-size: 0.78rem;
         }
 
         .categories button.active,
@@ -355,6 +366,13 @@
             render(btn.dataset.cat);
         });
     }
+
+    // Shrink categories on scroll
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        const headerBottom = header.offsetTop + header.offsetHeight;
+        categoriesContainer.classList.toggle('scrolled', window.scrollY > headerBottom);
+    }, { passive: true });
 
     cargar();
 
