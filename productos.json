@@ -190,5 +190,13 @@
         "categoria": "Pulso",
         "descripcion": "",
         "imagen": "img/1780015078722-d6316318-2918-4b52-8529-98de7d10ae1f.jpeg"
+    },
+    {
+        "id": 26,
+        "nombre": "Pulcera de estrellas",
+        "precio": "$",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780015146092-da7afd90-e4f5-4f60-bbd0-e9b521e0f588.jpeg"
     }
 ]
