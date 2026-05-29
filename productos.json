@@ -398,5 +398,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/placeholder.svg"
+    },
+    {
+        "id": 52,
+        "nombre": "Cadena de sombrero",
+        "precio": "$200",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780017330568-9504253B-7250-4011-80DB-457295C59BC9.jpeg"
     }
 ]
