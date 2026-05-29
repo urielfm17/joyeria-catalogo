@@ -414,5 +414,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780017435185-6BC64CF4-B0A2-44FC-95DA-07E7EC6EAF26.jpeg"
+    },
+    {
+        "id": 54,
+        "nombre": "Cadena sencilla",
+        "precio": "$150",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/placeholder.svg"
     }
 ]
