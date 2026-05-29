@@ -318,5 +318,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780016407832-F35A38D3-9D07-44A0-B46A-3CCC5FBE1889.jpeg"
+    },
+    {
+        "id": 42,
+        "nombre": "Aretes dior",
+        "precio": "$180",
+        "categoria": "Aretes",
+        "descripcion": "",
+        "imagen": "img/1780016454191-E7D08630-26AF-496F-8984-0A00ABA44D78.jpeg"
     }
 ]
