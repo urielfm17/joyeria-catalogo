@@ -454,5 +454,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780017932993-5B140ECA-F0D5-4BC9-8C32-F39D5D566C2A.jpeg"
+    },
+    {
+        "id": 59,
+        "nombre": "Cadena de la virgen",
+        "precio": "$160",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780017984497-3AEACB97-4BD9-4E6A-A436-B6933002E54D.jpeg"
     }
 ]
