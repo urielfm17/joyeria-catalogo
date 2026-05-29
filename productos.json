@@ -270,5 +270,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780016062451-508E6A00-8530-4CE5-BDD8-DC51C93D7EB0.jpeg"
+    },
+    {
+        "id": 36,
+        "nombre": "Aretes de colores",
+        "precio": "$150",
+        "categoria": "Aretes",
+        "descripcion": "",
+        "imagen": "img/1780016108887-DF391EE6-BD89-4481-9762-D326B72EDF26.jpeg"
     }
 ]
