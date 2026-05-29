@@ -462,5 +462,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780017984497-3AEACB97-4BD9-4E6A-A436-B6933002E54D.jpeg"
+    },
+    {
+        "id": 60,
+        "nombre": "Cadena de graduación",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780018035073-44758F88-E84C-4E1E-85FF-7CCABB4FF2A4.jpeg"
     }
 ]
