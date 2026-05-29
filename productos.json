@@ -166,5 +166,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780014791780-2cd39742-877a-474a-bdcc-1b3e7bcbcc26.jpeg"
+    },
+    {
+        "id": 23,
+        "nombre": "Pulcera",
+        "precio": "$170",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780014821885-549b785c-4d73-40a3-a4b5-fee12d269426.jpeg"
     }
 ]
