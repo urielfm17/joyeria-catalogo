@@ -150,5 +150,13 @@
         "categoria": "Brazalete",
         "descripcion": "",
         "imagen": "img/1780014599915-90843C3E-88A5-4792-A4D7-DD15B8D01535.jpeg"
+    },
+    {
+        "id": 21,
+        "nombre": "Italiana para niños",
+        "precio": "$120",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780014766226-B2FAD5E0-ED29-4CAE-99A1-8AF80E21B527.jpeg"
     }
 ]
