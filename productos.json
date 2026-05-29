@@ -518,5 +518,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780018480038-D08B94D3-C204-4A6A-87E6-6ABFDFA1FFA4.jpeg"
+    },
+    {
+        "id": 67,
+        "nombre": "Cadena sencilla delgada",
+        "precio": "$100",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/placeholder.svg"
     }
 ]
