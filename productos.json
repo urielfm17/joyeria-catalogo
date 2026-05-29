@@ -153,7 +153,7 @@
     },
     {
         "id": 21,
-        "nombre": "Italiana para niños",
+        "nombre": "Italiana para niÃ±os",
         "precio": "$120",
         "categoria": "Pulcera",
         "descripcion": "",
@@ -174,5 +174,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780014821885-549b785c-4d73-40a3-a4b5-fee12d269426.jpeg"
+    },
+    {
+        "id": 24,
+        "nombre": "Pulcera",
+        "precio": "$140",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780015044507-90344f4c-d4cb-49a9-a723-c4b6154974c2.jpeg"
     }
 ]
