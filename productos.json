@@ -406,5 +406,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780017330568-9504253B-7250-4011-80DB-457295C59BC9.jpeg"
+    },
+    {
+        "id": 53,
+        "nombre": "Cadena de san judas",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780017435185-6BC64CF4-B0A2-44FC-95DA-07E7EC6EAF26.jpeg"
     }
 ]
