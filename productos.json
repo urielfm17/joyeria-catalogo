@@ -126,5 +126,13 @@
         "categoria": "Clavo",
         "descripcion": "",
         "imagen": "img/1780014330774-847BE0D1-9EF2-4A0E-A637-50899B2BBEAE.jpeg"
+    },
+    {
+        "id": 18,
+        "nombre": "Brazalete",
+        "precio": "$280",
+        "categoria": "Brazalete",
+        "descripcion": "",
+        "imagen": "img/1780014375499-F2206911-E26E-4F30-AABD-C73ABD47E7F1.jpeg"
     }
 ]
