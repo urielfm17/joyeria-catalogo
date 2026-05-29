@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyas & Arte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -28,17 +31,41 @@
         }
 
         header h1 {
-            font-size: 2rem;
-            letter-spacing: 3px;
-            font-weight: 300;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 5px;
             text-transform: uppercase;
+            color: #f5e6d0;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+        }
+
+        header h1::before {
+            content: "◇";
+            display: block;
+            font-size: 1.4rem;
+            color: #d4a043;
+            margin-bottom: 8px;
+            opacity: 0.7;
+        }
+
+        header h1::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #d4a043;
+            margin: 10px auto 0;
+            opacity: 0.5;
         }
 
         header p {
-            margin-top: 8px;
-            font-size: 0.95rem;
-            opacity: 0.8;
-            letter-spacing: 1px;
+            margin-top: 6px;
+            font-size: 1rem;
+            opacity: 0.85;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 300;
         }
 
         /* CATEGORY TABS */
@@ -190,7 +217,7 @@
 
         /* RESPONSIVE */
         @media (min-width: 600px) {
-            header h1 { font-size: 2.5rem; }
+            header h1 { font-size: 3.5rem; }
             .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
         }
 
