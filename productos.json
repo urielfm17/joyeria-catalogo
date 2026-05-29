@@ -526,5 +526,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/placeholder.svg"
+    },
+    {
+        "id": 68,
+        "nombre": "Cadena sencilla gruesa",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/placeholder.svg"
     }
 ]
