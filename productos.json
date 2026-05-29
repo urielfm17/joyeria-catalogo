@@ -118,5 +118,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780013413740-CF90EEBF-B60D-49B5-BAC5-06DCAC5F8C29.jpeg"
+    },
+    {
+        "id": 17,
+        "nombre": "Brazalete",
+        "precio": "$320",
+        "categoria": "Brazalete",
+        "descripcion": "",
+        "imagen": "img/1780013961901-847BE0D1-9EF2-4A0E-A637-50899B2BBEAE.jpeg"
     }
 ]
