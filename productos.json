@@ -422,5 +422,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/placeholder.svg"
+    },
+    {
+        "id": 55,
+        "nombre": "Cadena de estrella de mar",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780017707274-142783C8-2C25-45A0-ADFE-55C427D02A1E.jpeg"
     }
 ]
