@@ -246,5 +246,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780015810837-D23DC761-5C53-42FC-A6C0-64ED8C9BA5A6.jpeg"
+    },
+    {
+        "id": 33,
+        "nombre": "Aracadas",
+        "precio": "$70",
+        "categoria": "Aracadas",
+        "descripcion": "",
+        "imagen": "img/1780015905560-AB2C837D-3909-46E0-9BA6-C0EE281FEF33.jpeg"
     }
 ]
