@@ -182,5 +182,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780015044507-90344f4c-d4cb-49a9-a723-c4b6154974c2.jpeg"
+    },
+    {
+        "id": 25,
+        "nombre": "Pulso de ojitos",
+        "precio": "$90",
+        "categoria": "Pulso",
+        "descripcion": "",
+        "imagen": "img/1780015078722-d6316318-2918-4b52-8529-98de7d10ae1f.jpeg"
     }
 ]
