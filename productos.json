@@ -86,5 +86,13 @@
         "categoria": "Esclava",
         "descripcion": "",
         "imagen": "img/1780012946701-0A61DA75-A451-49B7-8572-760136691963.jpeg"
+    },
+    {
+        "id": 12,
+        "nombre": "Pulso",
+        "precio": "$150",
+        "categoria": "Pulso",
+        "descripcion": "",
+        "imagen": "img/1780013208889-00EA1154-9203-45B5-B237-38C9719333A4.jpeg"
     }
 ]
