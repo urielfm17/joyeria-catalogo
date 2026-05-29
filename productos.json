@@ -238,5 +238,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780015731080-D970F347-E7A8-4F01-A463-7B36E7F53B58.jpeg"
+    },
+    {
+        "id": 32,
+        "nombre": "Aretes de cereza 🍒",
+        "precio": "$120",
+        "categoria": "Aretes",
+        "descripcion": "",
+        "imagen": "img/1780015810837-D23DC761-5C53-42FC-A6C0-64ED8C9BA5A6.jpeg"
     }
 ]
