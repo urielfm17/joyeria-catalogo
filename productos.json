@@ -494,5 +494,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780018325422-8F0DF943-4814-4D0E-ACB7-E5C5F5999633.jpeg"
+    },
+    {
+        "id": 64,
+        "nombre": "Cadena",
+        "precio": "&180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780018374736-E323B3BC-29AA-41EB-ACB3-948B1781D0C5.jpeg"
     }
 ]
