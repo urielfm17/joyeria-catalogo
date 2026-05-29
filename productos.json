@@ -486,5 +486,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780018158046-CADAEAA0-5216-44FA-A265-F5D08EBDB122.jpeg"
+    },
+    {
+        "id": 63,
+        "nombre": "Cadena de luna",
+        "precio": "$170",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/placeholder.svg"
     }
 ]
