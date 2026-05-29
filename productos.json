@@ -134,5 +134,13 @@
         "categoria": "Brazalete",
         "descripcion": "",
         "imagen": "img/1780014375499-F2206911-E26E-4F30-AABD-C73ABD47E7F1.jpeg"
+    },
+    {
+        "id": 19,
+        "nombre": "Pulcera",
+        "precio": "$100 c/u",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780014457660-048000F1-0F33-471D-A747-F59345C0930D.jpeg"
     }
 ]
