@@ -374,5 +374,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780016897826-A9977C56-E792-431B-A193-C92E0F97E87C.jpeg"
+    },
+    {
+        "id": 49,
+        "nombre": "Anillos",
+        "precio": "$100 c/u",
+        "categoria": "Anillos",
+        "descripcion": "",
+        "imagen": "img/1780016997878-CE144FF0-AB4A-47D8-A47D-CEE140FB923D.jpeg"
     }
 ]
