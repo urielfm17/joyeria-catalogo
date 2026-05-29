@@ -430,5 +430,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780017707274-142783C8-2C25-45A0-ADFE-55C427D02A1E.jpeg"
+    },
+    {
+        "id": 56,
+        "nombre": "Cadena de flor",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780017777944-FF8EC263-0794-4BD9-84C0-146D8A4E7683.jpeg"
     }
 ]
