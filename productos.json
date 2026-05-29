@@ -294,5 +294,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780016219145-86278CE8-4F74-42F4-BF4C-AC1BC6D4C4CC.jpeg"
+    },
+    {
+        "id": 39,
+        "nombre": "Aretes",
+        "precio": "$170",
+        "categoria": "Aretes",
+        "descripcion": "",
+        "imagen": "img/1780016310031-586F962E-04F8-40E0-8E3E-679318CED64F.jpeg"
     }
 ]
