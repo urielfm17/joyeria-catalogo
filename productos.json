@@ -342,5 +342,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780016560694-B7D5D4EC-E361-4B86-8196-B511B1300DA5.jpeg"
+    },
+    {
+        "id": 45,
+        "nombre": "Aretes van cleef",
+        "precio": "$90",
+        "categoria": "Aretes",
+        "descripcion": "",
+        "imagen": "img/1780016600627-FB5BCD7B-5259-49A5-92C5-EC9CB6920226.jpeg"
     }
 ]
