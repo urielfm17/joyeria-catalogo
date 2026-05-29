@@ -126,5 +126,13 @@
         "categoria": "Pulcera",
         "descripcion": "",
         "imagen": "img/1780013413740-CF90EEBF-B60D-49B5-BAC5-06DCAC5F8C29.jpeg"
+    },
+    {
+        "id": 17,
+        "nombre": "Italianas",
+        "precio": "$120",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780013477910-4B078D4B-9CB1-4ED2-9B24-397F1DBC52E3.jpeg"
     }
 ]
