@@ -153,7 +153,7 @@
     },
     {
         "id": 21,
-        "nombre": "Italiana para niÃ±os",
+        "nombre": "Italiana para niÃÂ±os",
         "precio": "$120",
         "categoria": "Pulcera",
         "descripcion": "",
@@ -241,7 +241,7 @@
     },
     {
         "id": 32,
-        "nombre": "Aretes de cereza 🍒",
+        "nombre": "Aretes de cereza ð",
         "precio": "$120",
         "categoria": "Aretes",
         "descripcion": "",
@@ -465,7 +465,7 @@
     },
     {
         "id": 60,
-        "nombre": "Cadena de graduación",
+        "nombre": "Cadena de graduaciÃ³n",
         "precio": "$180",
         "categoria": "Cadena",
         "descripcion": "",
@@ -525,7 +525,7 @@
         "precio": "$100",
         "categoria": "Cadena",
         "descripcion": "",
-        "imagen": "img/placeholder.svg"
+        "imagen": "img/1780027826942-526ADD5A-5D4E-4565-9FE5-B9863E235445.jpeg"
     },
     {
         "id": 68,
