@@ -153,7 +153,7 @@
     },
     {
         "id": 21,
-        "nombre": "Italiana para niÃ±os",
+        "nombre": "Italiana para niÃÂ±os",
         "precio": "$120",
         "categoria": "Pulcera",
         "descripcion": "",
@@ -214,5 +214,13 @@
         "categoria": "Brazalete",
         "descripcion": "",
         "imagen": "img/1780015261834-7363A6C8-5295-46F0-8329-4EEE1A2B8074.jpeg"
+    },
+    {
+        "id": 29,
+        "nombre": "Brazalete",
+        "precio": "$",
+        "categoria": "Brazalete",
+        "descripcion": "",
+        "imagen": "img/1780015508756-DAED0C84-32E7-488F-B43C-93AEF6070C81.jpeg"
     }
 ]
