@@ -153,7 +153,7 @@
     },
     {
         "id": 21,
-        "nombre": "Italiana para niÃÂ±os",
+        "nombre": "Italiana para niÃÂÃÂ±os",
         "precio": "$120",
         "categoria": "Pulcera",
         "descripcion": "",
@@ -193,11 +193,11 @@
     },
     {
         "id": 26,
-        "nombre": "Pulcera de estrellas",
-        "precio": "$",
+        "nombre": "Pulcera de estrellas⭐️",
+        "precio": "$180",
         "categoria": "Pulcera",
         "descripcion": "",
-        "imagen": "img/1780015146092-da7afd90-e4f5-4f60-bbd0-e9b521e0f588.jpeg"
+        "imagen": "img/1780098816890-IMG_8914.jpeg"
     },
     {
         "id": 27,
@@ -241,7 +241,7 @@
     },
     {
         "id": 32,
-        "nombre": "Aretes de cereza ð",
+        "nombre": "Aretes de cereza Ã°ÂÂÂ",
         "precio": "$120",
         "categoria": "Aretes",
         "descripcion": "",
@@ -465,7 +465,7 @@
     },
     {
         "id": 60,
-        "nombre": "Cadena de graduaciÃ³n",
+        "nombre": "Cadena de graduaciÃÂ³n",
         "precio": "$180",
         "categoria": "Cadena",
         "descripcion": "",
