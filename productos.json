@@ -478,5 +478,13 @@
         "categoria": "Cadena",
         "descripcion": "",
         "imagen": "img/1780018103901-9EC8A6A8-84DE-46F3-81E9-CD1B6DE21EBB.jpeg"
+    },
+    {
+        "id": 62,
+        "nombre": "Cadena de floresita y gira",
+        "precio": "$180",
+        "categoria": "Cadena",
+        "descripcion": "",
+        "imagen": "img/1780018158046-CADAEAA0-5216-44FA-A265-F5D08EBDB122.jpeg"
     }
 ]
