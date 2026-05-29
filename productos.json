@@ -118,5 +118,13 @@
         "categoria": "Pulso",
         "descripcion": "",
         "imagen": "img/1780013375592-6D635F85-0E6C-4BC0-9579-F35AE2729C7D.jpeg"
+    },
+    {
+        "id": 16,
+        "nombre": "Pulcera",
+        "precio": "$70",
+        "categoria": "Pulcera",
+        "descripcion": "",
+        "imagen": "img/1780013413740-CF90EEBF-B60D-49B5-BAC5-06DCAC5F8C29.jpeg"
     }
 ]
