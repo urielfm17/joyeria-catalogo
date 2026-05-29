@@ -334,5 +334,13 @@
         "categoria": "Aretes",
         "descripcion": "",
         "imagen": "img/1780016530467-02B1A543-4912-4202-8C3D-92FD79409606.jpeg"
+    },
+    {
+        "id": 44,
+        "nombre": "Aretes de flor",
+        "precio": "$90",
+        "categoria": "Aretes",
+        "descripcion": "",
+        "imagen": "img/1780016560694-B7D5D4EC-E361-4B86-8196-B511B1300DA5.jpeg"
     }
 ]
