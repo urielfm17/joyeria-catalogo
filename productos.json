@@ -110,5 +110,13 @@
         "categoria": "Pulso",
         "descripcion": "",
         "imagen": "img/1780013317089-8FCABC9E-A6A0-4A03-8C34-0122EC55F058.jpeg"
+    },
+    {
+        "id": 15,
+        "nombre": "Pulso",
+        "precio": "$150",
+        "categoria": "Pulso",
+        "descripcion": "",
+        "imagen": "img/1780013375592-6D635F85-0E6C-4BC0-9579-F35AE2729C7D.jpeg"
     }
 ]
