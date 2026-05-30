@@ -582,5 +582,13 @@
         "categoria": "Conjunto",
         "descripcion": "",
         "imagen": "img/1780099795699-490E7CA4-0550-449B-9555-77E6FD280DF9.jpeg"
+    },
+    {
+        "id": 75,
+        "nombre": "Anillo",
+        "precio": "$140",
+        "categoria": "Anillo",
+        "descripcion": "",
+        "imagen": "img/1780099846515-A349FAA6-E5B0-4577-BF50-848E56621A76.jpeg"
     }
 ]
