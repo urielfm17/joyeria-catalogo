@@ -152,14 +152,6 @@
         "imagen": "img/1780014599915-90843C3E-88A5-4792-A4D7-DD15B8D01535.jpeg"
     },
     {
-        "id": 21,
-        "nombre": "Italiana para niÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±os",
-        "precio": "$120",
-        "categoria": "Pulcera",
-        "descripcion": "",
-        "imagen": "img/1780014766226-B2FAD5E0-ED29-4CAE-99A1-8AF80E21B527.jpeg"
-    },
-    {
         "id": 22,
         "nombre": "Pulcera",
         "precio": "$140",
@@ -193,7 +185,7 @@
     },
     {
         "id": 26,
-        "nombre": "Pulcera de estrellasÃ¢Â­ÂÃ¯Â¸Â",
+        "nombre": "Pulcera de estrellasÃÂ¢ÃÂ­ÃÂÃÂ¯ÃÂ¸ÃÂ",
         "precio": "$180",
         "categoria": "Pulcera",
         "descripcion": "",
@@ -241,7 +233,7 @@
     },
     {
         "id": 32,
-        "nombre": "Aretes de cereza ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ",
+        "nombre": "Aretes de cereza ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ",
         "precio": "$120",
         "categoria": "Aretes",
         "descripcion": "",
@@ -465,7 +457,7 @@
     },
     {
         "id": 60,
-        "nombre": "Cadena de graduaciÃÂÃÂÃÂÃÂ³n",
+        "nombre": "Cadena de graduaciÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n",
         "precio": "$180",
         "categoria": "Cadena",
         "descripcion": "",
