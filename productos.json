@@ -558,5 +558,13 @@
         "categoria": "Barazalete",
         "descripcion": "",
         "imagen": "img/1780099613133-C5C2D9CE-3258-478F-A941-EA441652E85E.jpeg"
+    },
+    {
+        "id": 72,
+        "nombre": "Conjunto de van cleef",
+        "precio": "$190",
+        "categoria": "Conjunto",
+        "descripcion": "",
+        "imagen": "img/1780099680830-98015EAA-EA23-4ED6-8700-6502FB03C389.jpeg"
     }
 ]
