@@ -590,5 +590,13 @@
         "categoria": "Anillo",
         "descripcion": "",
         "imagen": "img/1780099846515-A349FAA6-E5B0-4577-BF50-848E56621A76.jpeg"
+    },
+    {
+        "id": 76,
+        "nombre": "Aracadas",
+        "precio": "$100",
+        "categoria": "Aracadas",
+        "descripcion": "",
+        "imagen": "img/1780100172294-A27DCA92-8B17-4DE2-B512-D46CF981CF7A.jpeg"
     }
 ]
