@@ -550,5 +550,13 @@
         "categoria": "Brazalete",
         "descripcion": "",
         "imagen": "img/1780099543413-IMG_8916.jpeg"
+    },
+    {
+        "id": 71,
+        "nombre": "Brazalete",
+        "precio": "$230",
+        "categoria": "Barazalete",
+        "descripcion": "",
+        "imagen": "img/placeholder.svg"
     }
 ]
