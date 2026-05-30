@@ -542,5 +542,13 @@
         "categoria": "Brazalete",
         "descripcion": "",
         "imagen": "img/1780099408898-IMG_8915.jpeg"
+    },
+    {
+        "id": 70,
+        "nombre": "Brazalete con cruz",
+        "precio": "$230",
+        "categoria": "Brazalete",
+        "descripcion": "",
+        "imagen": "img/1780099543413-IMG_8916.jpeg"
     }
 ]
