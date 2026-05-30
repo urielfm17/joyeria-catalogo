@@ -185,7 +185,7 @@
     },
     {
         "id": 26,
-        "nombre": "Pulcera de estrellasÃÂ¢ÃÂ­ÃÂÃÂ¯ÃÂ¸ÃÂ",
+        "nombre": "Pulcera de estrellasÃÂÃÂ¢ÃÂÃÂ­ÃÂÃÂÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
         "precio": "$180",
         "categoria": "Pulcera",
         "descripcion": "",
@@ -209,11 +209,11 @@
     },
     {
         "id": 29,
-        "nombre": "Brazalete",
-        "precio": "$",
+        "nombre": "Brazalete de cruz",
+        "precio": "$230",
         "categoria": "Brazalete",
         "descripcion": "",
-        "imagen": "img/1780015508756-DAED0C84-32E7-488F-B43C-93AEF6070C81.jpeg"
+        "imagen": "img/1780100461986-IMG_8916.jpeg"
     },
     {
         "id": 30,
@@ -233,7 +233,7 @@
     },
     {
         "id": 32,
-        "nombre": "Aretes de cereza 🍒",
+        "nombre": "Aretes de cereza ð",
         "precio": "$120",
         "categoria": "Aretes",
         "descripcion": "",
@@ -457,7 +457,7 @@
     },
     {
         "id": 60,
-        "nombre": "Cadena de graduaciÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n",
+        "nombre": "Cadena de graduaciÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n",
         "precio": "$180",
         "categoria": "Cadena",
         "descripcion": "",
